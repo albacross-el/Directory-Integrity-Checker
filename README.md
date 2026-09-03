@@ -1,6 +1,6 @@
 # Directory Integrity Checker
 
-A command-line File Integrity Monitoring (FIM) tool that detects and tracks changes to files in a specified directory. Monitors for file creation, modification, deletion, and alerts on suspicious file types commonly associated with ransomware or malicious activity.
+A command-line File Integrity Monitoring (FIM) tool that detects and tracks changes to files in a specified directory. Monitors for file creation, modification, deletion, and alerts on suspicious file with type checking to identify commonly associated file extensions with ransomware or malicious activity.
 
 ## Features
 
@@ -8,9 +8,7 @@ A command-line File Integrity Monitoring (FIM) tool that detects and tracks chan
 - **SHA-256 Hashing**: Maintains cryptographic hashes of all files to detect modifications
 - **Baseline Creation**: Automatically scans and creates a hash baseline of all files on startup
 - **Change Detection**: Tracks file creation, modification, and deletion events
-- **Suspicious Activity Alerts**: Flags files with dangerous extensions (`.locked`, `.crypto`, `.enc`, `.bat`, `.vbs`, `.ps1`, `.exe`, `.sh`)
-- **Rotating Log Files**: Automatically logs all events to `fim_audit.log` with rotation (max 50 MB per file, keeps 3 backups)
-- **Interactive Menu**: User-friendly command-line interface for easy operation
+- **Suspicious Activity Alerts**: Flags files with dangerous extensions
 
 ## Requirements
 
